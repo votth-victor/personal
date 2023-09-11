@@ -20,15 +20,20 @@ const artboard = require("../../assets/profile/artboard.png");
 function Header() {
   return (
     <Container>
-      <BackgroundImage src={artboard} />
+      <BackgroundImage src={artboard} draggable={false} />
       <ProfileContainer>
         <ProfileImageContainer>
-          <ProfileImage src={profileImage} />
+          <ProfileImage src={profileImage} draggable={false} />
         </ProfileImageContainer>
         <InfoContainer>
           <NameContainer>
             <Name>Victor Nunes</Name>
-            <VerifiedImage src={verified} height={16} width={16} />
+            <VerifiedImage
+              src={verified}
+              height={16}
+              width={16}
+              draggable={false}
+            />
           </NameContainer>
           <Username>@victornnunes</Username>
           <Position>CEO at Votth</Position>
