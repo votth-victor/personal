@@ -18,7 +18,11 @@ function LinkList() {
           label={"Whatsapp"}
           icon="whatsapp"
           onClick={() =>
-            window.open("whatsapp://send?text=hello&phone=+5531997204079")
+            window.open(
+              "https://wa.me/+5531997204079?text=Olá, Victor! Estou entrando em contato através do seu cartão digital.",
+              "_blank",
+              "noreferrer"
+            )
           }
         />
       </LinkSection>

@@ -18,6 +18,7 @@ import {
 import Verified from "../../assets/icons/verified.component";
 import ShareIcon from "../../assets/icons/ShareIcon.component";
 import AddContactIcon from "../../assets/icons/AddContactIcon.component";
+import { createVCard } from "../../utils/VCardCreator";
 
 const profileImage = require("../../assets/profile/profileImage.jpeg");
 const artboard = require("../../assets/profile/artboard.png");
@@ -31,7 +32,7 @@ function Header() {
           <ProfileImage src={profileImage} draggable={false} />
         </ProfileImageContainer>
         <ActionButtonsContainer>
-          <SaveNumber>
+          <SaveNumber onClick={() => createVCard()}>
             <AddContactIcon />
             <AddContactLabel>Salvar contato</AddContactLabel>
           </SaveNumber>
@@ -45,7 +46,7 @@ function Header() {
             <Verified />
           </NameContainer>
           <Username>@victornnunes</Username>
-          <Position>CEO at Votth</Position>
+          <Position>CEO at Votth Digital</Position>
         </InfoContainer>
       </ProfileContainer>
     </Container>
