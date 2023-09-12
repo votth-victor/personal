@@ -10,7 +10,7 @@ export const createVCard = async () => {
   const role = "Software Engineer";
   const email = "contato@votth.com";
   const phone = "+55 31 997204079";
-  const personalUrl = "https://votth.com";
+  const personalUrl = "https://votth-victor.github.io/personal-page";
   const url = "https://votth.com";
 
   vCard
