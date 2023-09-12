@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 export const BackgroundImage = styled.img`
   width: 100%;
+  max-width: 800px;
   height: 150px;
   position: absolute;
   top: 0;

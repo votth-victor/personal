@@ -23,6 +23,8 @@ export const Label = styled.p`
   font-weight: 500;
   font-size: 14px;
   margin-left: 16px;
+  text-decoration: none;
+  color: #000;
 `;
 
 export const ButtonIcon = styled.img``;
