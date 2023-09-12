@@ -25,4 +25,5 @@ export const Label = styled.p`
   margin-left: 16px;
   text-decoration: none;
   color: #000;
+  opacity: 0.8;
 `;

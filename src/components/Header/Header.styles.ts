@@ -54,8 +54,6 @@ export const Name = styled.p`
   margin-right: 4px;
 `;
 
-export const VerifiedImage = styled.img``;
-
 export const Username = styled.p`
   font-family: "Inter";
   font-weight: 300;
@@ -68,4 +66,56 @@ export const Position = styled.p`
   font-family: "Inter";
   font-weight: 400;
   font-size: 14px;
+`;
+
+export const ActionButtonsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+`;
+
+export const SaveNumber = styled.button`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #007bff;
+  padding: 8px;
+`;
+
+export const ShareContact = styled.button`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  background-color: #fff;
+  margin-left: 8px;
+  margin-right: 8px;
+  opacity: 0.7;
+`;
+
+export const AddContactLabel = styled.p`
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 8px;
+  color: #ffffff;
 `;

@@ -1,5 +1,7 @@
 import React from "react";
 import {
+  ActionButtonsContainer,
+  AddContactLabel,
   BackgroundImage,
   Container,
   InfoContainer,
@@ -9,10 +11,13 @@ import {
   ProfileContainer,
   ProfileImage,
   ProfileImageContainer,
+  SaveNumber,
+  ShareContact,
   Username,
-  VerifiedImage,
 } from "./Header.styles";
 import Verified from "../../assets/icons/verified.component";
+import ShareIcon from "../../assets/icons/ShareIcon.component";
+import AddContactIcon from "../../assets/icons/AddContactIcon.component";
 
 const profileImage = require("../../assets/profile/profileImage.jpeg");
 const artboard = require("../../assets/profile/artboard.png");
@@ -25,6 +30,15 @@ function Header() {
         <ProfileImageContainer>
           <ProfileImage src={profileImage} draggable={false} />
         </ProfileImageContainer>
+        <ActionButtonsContainer>
+          <SaveNumber>
+            <AddContactIcon />
+            <AddContactLabel>Salvar contato</AddContactLabel>
+          </SaveNumber>
+          <ShareContact>
+            <ShareIcon />
+          </ShareContact>
+        </ActionButtonsContainer>
         <InfoContainer>
           <NameContainer>
             <Name>Victor Nunes</Name>
