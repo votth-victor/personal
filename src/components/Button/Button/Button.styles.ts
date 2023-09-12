@@ -21,10 +21,8 @@ export const Container = styled.button`
 export const Label = styled.p`
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 16px;
   text-decoration: none;
   color: #000;
 `;
-
-export const ButtonIcon = styled.img``;

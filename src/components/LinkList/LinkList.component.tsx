@@ -9,7 +9,7 @@ function LinkList() {
         <Title>Links úteis</Title>
         <Button
           label={"Votth digital"}
-          icon="website"
+          icon="votth"
           onClick={() =>
             window.open("https://votth.com", "_blank", "noreferrer")
           }

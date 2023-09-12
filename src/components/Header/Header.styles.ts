@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   background-color: #ffffff;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #e6ecf0;
 `;
 
@@ -50,7 +50,7 @@ export const NameContainer = styled.div`
 export const Name = styled.p`
   font-family: "Inter";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   margin-right: 4px;
 `;
 
@@ -59,7 +59,7 @@ export const VerifiedImage = styled.img``;
 export const Username = styled.p`
   font-family: "Inter";
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0.8;
   margin-bottom: 6px;
 `;
@@ -67,5 +67,5 @@ export const Username = styled.p`
 export const Position = styled.p`
   font-family: "Inter";
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
 `;

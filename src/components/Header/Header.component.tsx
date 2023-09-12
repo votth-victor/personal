@@ -12,8 +12,8 @@ import {
   Username,
   VerifiedImage,
 } from "./Header.styles";
+import Verified from "../../assets/icons/verified.component";
 
-const verified = require("../../assets/icons/verified_icon_16x16.png");
 const profileImage = require("../../assets/profile/profileImage.jpeg");
 const artboard = require("../../assets/profile/artboard.png");
 
@@ -28,12 +28,7 @@ function Header() {
         <InfoContainer>
           <NameContainer>
             <Name>Victor Nunes</Name>
-            <VerifiedImage
-              src={verified}
-              height={16}
-              width={16}
-              draggable={false}
-            />
+            <Verified />
           </NameContainer>
           <Username>@victornnunes</Username>
           <Position>CEO at Votth</Position>
