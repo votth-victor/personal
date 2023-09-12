@@ -35,7 +35,7 @@ export const createVCard = async () => {
   const csvURL = window.URL.createObjectURL(file);
   let tempLink = document.createElement("a");
   tempLink.href = csvURL;
-  tempLink.setAttribute("download", `${firstName}.vcf`);
+  tempLink.setAttribute("download", "VictorNunesVotthDigital.vcf");
   document.body.appendChild(tempLink);
   tempLink.click();
   document.body.removeChild(tempLink);
