@@ -10,12 +10,16 @@ function LinkList() {
         <Button
           label={"Votth digital"}
           icon="website"
-          onClick={() => console.log("teste")}
+          onClick={() =>
+            window.open("https://votth.com", "_blank", "noreferrer")
+          }
         />
         <Button
           label={"Whatsapp"}
           icon="whatsapp"
-          onClick={() => console.log("teste")}
+          onClick={() =>
+            window.open("whatsapp://send?text=hello&phone=+5531997204079")
+          }
         />
       </LinkSection>
       <LinkSection>
@@ -23,17 +27,29 @@ function LinkList() {
         <Button
           label={"Linkedin"}
           icon="linkedin"
-          onClick={() => console.log("teste")}
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/victornnunees/",
+              "_blank",
+              "noreferrer"
+            )
+          }
         />
         <Button
           label={"Instagram"}
           icon="instagram"
-          onClick={() => console.log("teste")}
+          onClick={() =>
+            window.open(
+              "https://www.instagram.com/victornnunees/",
+              "_blank",
+              "noreferrer"
+            )
+          }
         />
         <Button
           label={"Email"}
           icon="email"
-          onClick={() => console.log("teste")}
+          onClick={() => window.location.assign("mailto:contato@votth.com")}
         />
       </LinkSection>
     </Container>
