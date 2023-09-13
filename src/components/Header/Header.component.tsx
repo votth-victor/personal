@@ -40,7 +40,7 @@ function Header() {
           </SaveNumber>
           <RWebShare
             data={{
-              text: "Acesse meu cartão digital e tenha acesso a todas as minhas informações de contato! \n",
+              text: "Acesse meu cartão digital e tenha acesso a todas as minhas informações de contato! \n\n",
               url: "https://votth-victor.github.io/personal-page",
               title: "Victor Nunes - VOTTH Digital",
             }}
