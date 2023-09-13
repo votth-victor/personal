@@ -19,6 +19,8 @@ import Verified from "../../assets/icons/verified.component";
 import ShareIcon from "../../assets/icons/ShareIcon.component";
 import AddContactIcon from "../../assets/icons/AddContactIcon.component";
 import { createVCard } from "../../utils/VCardCreator";
+import OptionsIcon from "../../assets/icons/OptionsIcon.component";
+import { RWebShare } from "react-web-share";
 
 const profileImage = require("../../assets/profile/profileImage.jpeg");
 const artboard = require("../../assets/profile/artboard.png");
@@ -36,9 +38,18 @@ function Header() {
             <AddContactIcon />
             <AddContactLabel>Salvar contato</AddContactLabel>
           </SaveNumber>
-          <ShareContact>
-            <ShareIcon />
-          </ShareContact>
+          <RWebShare
+            data={{
+              text: "Acesse meu cartão digital e tenha acesso a todas as minhas informações de contato! \n",
+              url: "https://votth-victor.github.io/personal-page",
+              title: "Victor Nunes - VOTTH Digital",
+            }}
+            onClick={() => console.log("shared successfully!")}
+          >
+            <ShareContact>
+              <OptionsIcon />
+            </ShareContact>
+          </RWebShare>
         </ActionButtonsContainer>
         <InfoContainer>
           <NameContainer>
